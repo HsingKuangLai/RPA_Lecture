@@ -1,0 +1,31 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_InvoiceDetails&Sequence_1",
+        "FolderPath&Sequence_1",
+        "fileName&Sequence_7",
+        "dt_InvoiceDetail_str&Sequence_7",
+        "TotalValue&Sequence_10",
+        "InvoiceNumber&Sequence_10",
+        "InvoiceDate&Sequence_10",
+        "InvoiceNumber_Date&Sequence_10",
+        "TotalValueNumber&Sequence_10",
+        "TotalValueCurrency&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

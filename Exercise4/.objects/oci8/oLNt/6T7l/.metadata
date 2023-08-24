@@ -1,0 +1,13 @@
+﻿{
+  "Id": "6T7l_W9VrUypISTri12jHA",
+  "Reference": "c9bNOC0LTUSdgXT90TKlzw/6T7l_W9VrUypISTri12jHA",
+  "ParentRef": "c9bNOC0LTUSdgXT90TKlzw/oLNtaalnAU-WRIs3RQvWDA",
+  "Name": "Edge: NTU Online臺大課程網(45)",
+  "Type": "Screen",
+  "Created": "2023-08-09T07:55:16.9411776Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.6.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2023-08-09T07:55:16.9411776Z"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="mBmSBe4Fw0ichcb1dPLk9g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAD4SURBVFhH7c3BioNQFARR//+nZ6gLLR1TPhMwkEUO1Ma+6vbzrf4WfZT90PoI+9FVt7IfXHUb+zg12+kW9mFqttMZuyVlh9RspyO7sR7YATXbqdm+amcjNdup2b5qZyM12ylso7CNhg30DnufwjYaNtA77H0K22jYQGFbCtsobKNhA4VtKWyjsI2GDRS2pbCNwjYaNlDYlsI2Ctto2EDNdgrbKGyjYQM12ylso7CNhg3UbKewjcI2GjZQs53CNgrbaNhAzXYK2yhso2EDNdspbKOwjXY2vlLYdtUDO3ilZvuqJ3bUwZ61437W0uqFs+fteNP9fJNt+wcxrhgF12T8owAAAABJRU5ErkJggg==" Selector="&lt;html app='msedge.exe' title='Goodinfo!台灣股市資訊網-首頁' /&gt;" Title="Goodinfo!台灣股市資訊網-首頁" Url="https://goodinfo.tw/tw/index.asp">
+      <imageRef attrName="InformativeScreenshot" originalValue="96ec8ac9980471dcc48c8f5b90cf2685.jpg" xmlns="">0nfwuuG9F20OkhZs3vbbRoA</imageRef>
+    </TargetApp>
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>
