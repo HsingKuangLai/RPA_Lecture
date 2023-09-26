@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="820,812.6666666666666" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="915.2,794.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -116,7 +116,7 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="830,748" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="809.6,729.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="dt_Forex" />
     </Sequence.Variables>
@@ -125,7 +125,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart sap:VirtualizedContainerService.HintSize="768,637.3333333333334" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="768,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="ForexInfo" />
       </Flowchart.Variables>
@@ -134,73 +134,35 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <av:Point x:Key="ShapeLocation">640,12.666666666666664</av:Point>
-          <av:Size x:Key="ShapeSize">60,74.66666666666667</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">640,50 610.0000000000001,50 610,71.33333333333334</av:PointCollection>
+          <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">640,50.266666666666666 610,50.266666666666666 610,70.86666666666667</av:PointCollection>
           <x:Double x:Key="Width">734</x:Double>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID5</x:Reference>
+        <x:Reference>__ReferenceID6</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID5">
+      <FlowStep x:Name="__ReferenceID6">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <av:Point x:Key="ShapeLocation">410,23.66666666666667</av:Point>
-            <av:Size x:Key="ShapeSize">200,95.33333333333333</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">410,71.33333333333334 380,71.33333333333334 380,50 350,50</av:PointCollection>
+            <av:Size x:Key="ShapeSize">200,94.4</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">410,70.86666666666667 380,70.86666666666667 380,49.66666666666667 350,49.66666666666667</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Get thr forex info from 台灣期交所" AttachMode="ByInstance" DisplayName="Use Browser Edge: 臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢" sap:VirtualizedContainerService.HintSize="200,95.33333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V2">
+        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Get thr forex info from 台灣期交所" AttachMode="ByInstance" DisplayName="Use Browser Edge: 臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢" sap:VirtualizedContainerService.HintSize="200,94.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,873.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                <Sequence.Variables>
-                  <Variable x:TypeArguments="x:String" Name="DateStr" />
-                  <Variable x:TypeArguments="x:String" Name="USDTPE" />
-                  <Variable x:TypeArguments="x:String" Name="RMBTPE" />
-                </Sequence.Variables>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,251.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NGetText DisplayName="Get Text '日期(迄)：'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" TextString="[DateStr]" Version="V3">
-                  <uix:NGetText.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.taifex.com.tw/cht/3/dailyFXRate" CvElementArea="1977, 950, 253, 41" CvTextArea="1979, 959, 103, 21" CvTextArgument="2023/08/23" CvType="InputBox" DesignTimeRectangle="1978, 952, 249, 39" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'2023/08/23'" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='queryEndDate' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='queryEndDate' type='text' tag='INPUT' class='hasDatepicker' aaname='日期(迄)：' /&gt;" Guid="e9d077ec-329e-420a-aaa9-f3b09e59731b" InformativeScreenshot="4edeb11cd0362219232ba3d4b56fcc1a.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                          <uix:Target CvTextArgument="B3(Z) :" CvType="Text" DesignTimeRectangle="1862, 958, 107, 25" ElementType="Text" FriendlyName="'日期(迄)：'" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='日期(迄)：' check:innerText='日期(迄)：' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAAdCAYAAACkLzKqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVQSURBVGhD7VrfS+NKFL7/5P4VvgvLffKlT30pyPVh3Qf7cFdkLZciIleCy1ZKW0pc9BYtxUglqC1qiy2V1pbvnkkmySSZSRv7A7v0wAd2fib5Zs75zox/fPqcxgrLiRV5S4wVeUuMFXlLjBV5S4wFkZfHvm4gd5L3yr6WccTKCmVs+NrOAxlsa2dISOsIB1colM6x9SUjr/+gkJK3fdnBoD+MDaMQHstGDSbImjWv7OAeXVb2eo+0VVbGxSsrkFkbmjtWEHnoL7yZZUOYpX+F+gxSehsDVvX6hKPdIEEZHN1ZHdH4JfaLQh65x6HdyTKas6xJ2s0XUvLS133+UPHMLIfHWvvyA6m9OhqswWOd/s7Z+Nnk5DWR3fuBjaRHnrggbFOTl66Jz0ofUc9hLdBmbbeCqkPwqIeL4wOv/ruJllUxRKvZhvmgQh3fhDE/see1XsCxDgo7Qv0CEEle97ocqpPBaS8jb7KF0MfFgUOeSJSsTID74W0b0M5WusbPGrK3/L1uzrmr1mgHWUUTmOQZdgw0Rrya2XM9Yv7ZY+7kpUpNWrU92231e95KfuSkjvpoPDSh7cUlz3N3lo2ozddgmyA0fDspYp3/TpS5O+23obP4GwmKib6x+BjnHWt62yh0nC4ubs6dPBtxYh65H8e17pG7U5EX2HWtqiCGRDjz+KyN3KFTTrv+cJoPfoYqX4eWPRoLEGA2FkuezN4pWLaqPV7HrIOcatdlTTScGPrGm7Pxdq5g0HyDNy++qqAWYjaCz1IY6wH8SBzXUb2pYz8kpqKxWPJkbjNEHgkHp81DB10rpgTJy/kVJsWa8avdi2/svSxRk8wgLVPWLsm2maXgWAHs+b1AQ49BAok5t++LiZSsjQKR5GEUeCkVeNCejdsUiVLFPP9Obl3mhDo5ti757ujSfEl5GyutOL1HwyHvrYOL07B6DcPvNQa355I2CiQrMPh8g4daLJcbTV5Mm43bnIC8rD+OjdsZa258i5Dzm2fQn53UZIjGdQUpJclhaE3elRnFvfGEC9jUKL5rrpCaFB/QbU5Ank+EsDRDqAuh6OVjrx0+vz9nWz8mt+fstlcSM//EFzD7t0LS7r7TfLFY8mZ1whKLPNm43nhuukDWvbuS7Dbq/9JHy6xJUwUHPm/1e5BXtFwRi4uWiTFUEAXst1HwXKvbhmDbNORlsPE3Tz003q/fxD6rE05XGudFhatzvAbvo8BvuPM88sbBuOQf1qccFW4zEPOMU6EuAo6kdwUF7TrLWG4mjW8H2PrFk/AxinaqmPdOLMhtMmg4+s/A9qb9ez1rQNeF1V6yP6RfqSnIe4fa9JLpIarHvCyQ6KsteNgdhN81x1KbUyCavFtSXO5phxrOmaGaPMqn+JhsBSf/ogTZcpveR8nyoy6zLIoFFXnx8zw3VaA5jYIn/9kiqrp5pQxNFLQx6cI0eZ6VnpgwTBPZWSbpcU1FnisK3ogELtVd+W6VEZlWrhg8KVGRF+OEheClCmQ8Jx08N5E7KSLBPcE0mOqERSR+pkl615HW0WjwLxMmT7hLk5whpms9tG4qyDrzkdpjK/zP0pMdCx1RQ4n1ttDPwqRnmzvkYvk4LAys71Zw4eZzfgvGYT/Ymatk/GnPNsUk/a4SK1bOPeYl8k/okspUX1bmoN2x/j3o33lZUohpoz6MvKzvhLcKLPlu08f3XReRAj28gn5Di6/ddwmKNHLNk9wqVLX4OeJMk/RZYy05/oXWN4UL0kkRvM9THi9l6Blk5VPiI97nLRNCN+mL+neEj3qTvlwY9z8s88AH/h+WFZYDK/KWFmn8D/iVChAUTP9zAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NGetText.Target>
-                </uix:NGetText>
-                <uix:NSetText DisplayName="Set Text '日期(起)：'" sap:VirtualizedContainerService.HintSize="388,162.66666666666666" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" Text="[DateStr]" Version="V3">
-                  <uix:NSetText.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.taifex.com.tw/cht/3/dailyFXRate" CvElementArea="1976, 902, 253, 43" CvTextArea="1979, 912, 102, 21" CvTextArgument="2023/07/01" CvType="InputBox" DesignTimeRectangle="1978, 905, 249, 39" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'2023/07/01'" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='queryStartDate' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='queryStartDate' type='text' tag='INPUT' class='hasDatepicker' aaname='日期(起)：' /&gt;" Guid="47deded0-6072-488c-a77a-f4bd37bdcdf1" ImageBase64="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" InformativeScreenshot="371ba1185da71d7ad42e7a1f683d5e66.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                          <uix:Target CvTextArgument="B#(E) :" CvType="Text" DesignTimeRectangle="1862, 911, 107, 25" ElementType="Text" FriendlyName="'日期(起)：'" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='日期(起)：' check:innerText='日期(起)：' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG8AAAAdCAYAAACkLzKqAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAT+SURBVGhD7VpRa+JKFL5/sr/C98Jyn/bFJ1+Esvdhuw/14XaRrQ+hLKWXsMtNESuSQrfSBtksltCq2FWqWHQrZ2cmJ8lMMhNNjdIsHvhAz5xkxvnOnHNmxr923pRgi2xiS16GsSUvw9iSl2FsycswNkReFY5MG4wv1UD3oQEnVFdrwFvBdt04hnzZgOK/p5CTtmcHUvL2r0cwmz4nhl2LvstFCxwg0msFuuN7GFPd0z2UmK4B356oQiZD0P13hVEF8xHNmDyDUz+V2HnAsfj9ekAHk+IGSh9EW6P/zHpzhfTZ0Ln2zUBKXun7FAeVTJxG9F2591+hWG5Dlxr02+Qz8XqK/3tIXg+08ld4WwjI4x3CFTV5pRY/VjKJprFgRanIQ71UpvDtmLcloONlP8CTEdQOQjZrRix54++NSJsMnr2MvOUcgU6ORx5PlEzH4ZMDA9qMMiMrOy+x03tooBIWEZA83sEIan2qlJBHcWBDd07bUX62pf2vC2snr1jvgdOZwIwaTCfk89BFH0mdT6Hb6YFeTkpeBU7uaBvKnNgIoS3A4RX2yYBjYf2i7uqC2ElCO4FLvII8gvzliBqgkNRxVpHarQNrJ8+FZGKUOY+EH9/zm2CpyAutuoHFFUOxWBA2E5K38+YCLPRDJn17YwXYZsmTyQsLln+sCbZRGYGhWHVRpE1edCy1pcfiIv9fG6wfbTj6mGzVbpY8WdiMkPcMA8+mM4Ixyylh8gyxwiS5Runt3gqPFfr+GAdbQN5OWYwCXTMBCaSY8599dKAos1EgljyYi1sBJTBppxM2eaJUOU+c6MG1wbWFUG6B5TsDhSTnddpw6L1T+ptHYGqSd/sQo8bs9lJio0ChCfYvfK7TShRy48lLKOmEzSXI08TV5NS5NhkKp1CgOfTgmHzHsSwZNpeFUNGSvJfoAGBPJ/ldh11ZWwxeYdhcgjwhFC4IaRSePSMmKXmnUKwsntijW27THnn3erBZ8pYKmzJJhzz39+BYeOFJjZCH45o/wImgFyFEqz+DvHMwf7p5gwmfTzDOU6Hf7Vowqb4NgSsrklcfMssweX4/zk2gjyFPE/Qi/sCVF5C3CPY1EiJUjoqwGcp59hnXJkHOxI00ndQCkhSZYNQ/3sOhv880YL/64Pa1oBJcKee9EBsKmxQ6nFzZsL/nft/VbDDN8+BH4uoQKzUFeaHQF1ttEnjjozLrDd3SPEIeqfr4o66QDK7jDgHEkJ+o2lwB8eTdNn0PjIN2u4i8SjCBZGUV3t1geRzcAGh41OU0+D2SirwE+zzSt8HOJ+kKZ9auSEJb7uMl6JJbBf1LNb5gWWWfR8ZXPHPAdhzQ0tykJxUVefnG0N1b/SIk4Ml77jOGPqYjZDKvD5+UqMhLcsJyicdXtJ8mWF68Jfs822rBkUYccMW7vZVOWHjiU92kj0dBaR+DLk5IlDziVSYSRwuLz6JnlVoTGPxogub1d3fDJvHv+oObC72iZnwP+9xzDMuebXrFjTcxhXMwOi9xThUpK55t8pv0u2YiJ1p7zsvThE+qTPVlpQH6HX1+AuYn1HlFBRW6QqqyZ5e8Vdi7YEVTmNzce3qT7/inL4MnsYCKYOhIK8jwrYKlJwt9DGlu0tNGrrD4B+3u0dMPeZsS4fs85fFShYxBpl8Rr/E+L0uI3KRv6u8Ir/UmPVtI+h+WNPCK/8OyRTawJS+zKMFvlbYP72zs9CcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NSetText.Target>
-                </uix:NSetText>
-                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '送出查詢'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V3">
-                  <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="https://www.taifex.com.tw/cht/3/dailyFXRate" CvElementArea="1938, 1002, 119, 55" CvTextArea="1955, 1016, 87, 24" CvTextArgument="ZREra$" CvType="Button" DesignTimeRectangle="1942, 1005, 114, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FriendlyName="'送出查詢'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='submitButton' tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='submitButton' type='button' tag='INPUT' class='btn_orange' aaname='送出查詢' check:text='送出查詢' /&gt;" Guid="05083df7-c38d-4cc2-ad85-ca57e9840d7a" ImageBase64="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" InformativeScreenshot="7a96d40d7db4c2f037273b1410274b46.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
-                      <uix:TargetAnchorable.Anchors>
-                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                          <uix:Target CvElementArea="2066, 1002, 121, 54" CvTextArea="2082, 1016, 87, 24" CvTextArgument="P*FN" CvType="Button" DesignTimeRectangle="2070, 1005, 114, 50" ElementType="Button" FriendlyName="'檔案下載'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='downloadButton' tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='downloadButton' type='button' tag='INPUT' class='btn_orange' aaname='每日外幣參考匯率(csv)' check:text='檔案下載' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAA2CAYAAAAS/219AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAz/SURBVHhe7ZlpdFRFFsfz2XE5gs5kZuAcMGwqIiASkYBJA7KFJc0iSYRkEhBMEGICGNlNYPAQFBgWiRn1CC0zQECWgEDCIqZDQFCU4GzA4GjaL3R0ZiSMmu7/1PJev6XqdapJ8ENOf/idV3Xv791XVbfT9NOYaQWrEaXtEW1sGyXU2OBXtY7g6zMhZHkdVY+i6qp6FFVX1aOouqoeRdVV9Si6JzQ28C+vI8GvakLI8jqqHkXVVfUoqq6qR1F1VT2KqqvqUXRPaGzwy49MfKgwlsXCuaqePRbOVfXssXCuqmePhXNVPXssnCvPCY0NXDtOEic06QSbB66d1K7WsapHidb8eWuKjf1nJYLXqkLQuROqHkXVVfUoqq6qR1F1VT2KqqvqUZpzhcYGrx428YHCWBYL56p69lg4V9Wzx8K5qp49Fs5V9eyxcK48JzQ2cOWQFH6TgczRUXVVPYqqq+pRVF1Vj6LqqnoUVdfsiI29fMCR4JWKELK8jqpHUXVVPYqqq+pRVF1Vj6LqqnoU3RMb+489CPx9L4eMQa4c89jI6641b4ztXrSm6MncltYUGhv8W7nG7jDjcDnzOFLXKWceR+o65czjSF2nnHkcqeuUM4/VXbGxf93RDLs0ZDk7kXjRms2j7gmNxV+2R2kDCI0NfvFelDaA2Ni6rSEClzhO83BxVVfVc4rJ4qqeU0wWV/WcYrK4qucUk8X1udjYi28zAnUG4WKyeGh+diMaakodveDFUvhPb4T/rDkmd+1zu3fj5EpcOaXm6nH73MmLxLXPgxdKyRmQPZ63xZm7EXVvz0fVgY08do6flb2Gfa4ji+tzobGBz8tCNF00xuFisjidV+fGICZmPKr1uLcI26Y9gpT5S+Cn88rpSIkhzuxCnq8tRHFCXxSvLcINrYa9pnkeih/MwEha5+npqNdjza3z+BzkD+iBpBaThnPmZ9Wux/Wa9fB7NTaPJmcQg5RlRda4dzM5jznIoevOLYT/3fFIui8OC0vXW9ep0ex+bDGhscHPtoRo+pxjj5nnekzmeVljx8Grx08vx5vj72Mbdc1bhODRLLjZxhYgeHYFypLvJrm7kfbqCqEmr9UyijymmvqzW8w48sG9hXU+nQUfWQP7YNP9n16A4l5kfF9/bDssP0/z3ByXuWJjL2xiBAhNn25kBCToXji3OoduYgy8Fu8VVK4qgJ86hzP5xnIKeM2qOShbUYhGSU1eqwNSs1JQkkd40c0ozhmDIjJfTWMyiLMouSM7zOKtansKXJiHIrquYZmoD+MZezLV9JbAf8qgYeMI9uyUpUtwncwpPLcWgVPP879Ysn9W79AMFGRkoq5GdZ3OntDYwKcbbpmmC+R6Kh9l2qHmDKTNeBg5eWmo/nMGb6IqwzLIoWo1yfXyOlqT1DllfuZylNFndByMihOm+JmX4MmbBM/WlWzu35rG1lOxn+f1ms7ko9i0BrljhdXcP8v4QOlMepjtp8/o4WIubzD/J2TgYFt8Fi7rNW3PUUVobPCTdQJNkpgM5n0wVfIV1wued7X4wASUzB2H1QR6FUnAKOoNmwqfXvOTIlSkd4XrCRuPtOf12/+KzZPs8Y6drP6CecY6w5KnNXYqvpbmRVhNz0Tr8yjaWmK7GLHQOp/ohM6m9RtMxHm9piJ2V2zs+ZKWcXopzpfORFXpJBR0IouO6UF+DOXBtzeNN/b52Wg8lEfy1BG5dGw2P9ShafCF6i4lje0CV7zBg+1p7Rh0fsQaH9CRx2PjrHHG/DzrWh3R1tD9KVQcleWdaTxZhAYzfxjC1uNePN8aP7mK+LK9tg5CYwPnnAl+zJHl7AT3kE8vXTQ95FGpuLw/lX8Vz8pF/cqeLC6j+J252ECakJSWhXp7Te35l1f2QSz1Oz2Jsnfmof7E77lDnpFKG96+Dzz7rfc6Id9TLj9wRjuMnJaKS8dlnh3zfc0xHN6PNX9oKt/r9vEYOXYwPNu1/ZiQr1NE98TGnn01LJDEZHzywm9Mm7gLqcULQrn6YtrYnvBU8DmtyWOksW9b65hhzz6Wj/J5o5E/Jg5JcXcZz2jfDp3ZX/Evkf/aIuV1yr0cfuDduiPlMe0Z7eNQUJxP3rllvsGNY8vwLcGvs87F7k9ZSO41x4+tIH4OVtDaQ6agntzLz+Au6Rmo7odCXaGxwTMrpQRqyUJMyBydwKksLNS+KmNi4rEomzb5YXgO8LyvmP+gkFH8lliPIjy/5hX4dsyE57nueFC7t3Pc/fwvmdL+fox0j4DnrXlorFGsGcrN5I0dMhm+M0tQV5SAJG0/sY8loHyvtY6ZwMFpyO//AJI0XD3v5ffFkTGda+SvIe/utbko6UbXOhTnyXMqJtBxIqo+stV0XKezJzQ2cGY5grVqOLlXXu5KNtMVowbQw3ChevdYZGdkoEHLN+4n/55uypBSd0SsF6ydC8+4zuRAOAM68EPm3ItR7lGo2FHI3VOFuLL1GZQ929fwSJPTMtJxRahrxdhPttbYCfDp+cpceCbx1yb6zKwluWjUc2b2T2C/JVxZz/A9LejL7rHP3UXkh1ztPHiG0HoueCvT2atPLDknaV0TKj0SG1u7mIHT4dE9wd0zHmnk0x3rnoLdM+iiE1Gte7umYM3soY6UhEhGTaW17heFPUhTya/c/r1RQJyyV59F9Y483Kym+Uz+leYaj29M91D8O6Zgg7sLspbNtsRlGPtxrvfN6/pfbweUvGPNMfaNZ43tMzKB74k8mzZSn6/R5u6iPOIX4lg6rdWTvA30Jtc7sXBToVjThvTcbdxyYylSd1cyeV3pgDVbF6PG3tiyRLap5umB9/aZalZm4o/0UEzoHwI+78dfkbr2xKJQzMBwp+Cqea02jP04N5ZBfhiWrJwt7p0SUWMX42phJzK/E7H0w9JtKM7Jatow1umM0Nigl3yltQjyKlM8FY1k7J1OmzQYXj335mC+qeUvaO5U/pXnGguf5vB7usPzvnYP5f2x/FWpxZjWEhZxXcpoa3W/NAMNR/LQ8NqT7NnCXDuDxnX9Q+szzqXliI39aH6r4c2mCx4Erx7bMii0ifB0g2ePtZaMhoo52jidNyIpGT42n0NyL4a8yLHXi4A9yUofQveyHO7vGqF925BzOjYfvpWPo+DldPhO2upGiNBY+p8EW4tq1tiBqNZjbwxkm0rKGIOq9RMJLmTRTfWLRzmbT8SGMfServDsttaysJd8FSbdQ7x7kLVqJomlao0YhXqSvzy/M3tO5yd6Y8PqTPhPSGqExVpP7iii7TllKV2nPZ8Nz/BfsHxMO35O556j82b2r4DQ2OCH5K+glfBm0SYNgFePvTGAbcKVMRpV69yERGTTTfV7HOVs7saGZHpPHDzl1lqUxvJJKEvV/jNczN1wz01FA8tN4o1IHA4f81JRPrcXRv2WeoR2HZA91w1fpVhTjrWe3JGh3adCYiI8Wb9m49h2d5DrHchdRfbXj+S6JOC8tL46YmNP5rYavLHx8OqxzfHGxsLyADy7zLUmY8NDdPM0dwdck5Lg3WPOT9AaMYx8hZnjs+DbnISCePq/A0m+z0CcP2bOO+FUrzmm49Lacagy8+JD7NmuaSMt8bJk/n4b8xA5n33jsKgd3Runz6zJktqRITQ2cCKn1aj+HV1oPKr12Cbe2JSCVPgPZEupYD//SWN3Wmv5X41HzgujUbfXGue4Q42oF3Icf9kIlJeRr0NJTqT5esroe16caYlfLuqNpD7kbA7x+Q3iJZHmxppiLUFobPD4c63HwUw07M825pXZZE5ih02OHXZPJhpluSjKiI2tmhGlDSA0tulodpQ2gNDYnw5PRdORaQZHn8VPR9JDc3Pe7jKP+PZctKbh/Vw1hcb+eHgKIQ2Bw+lETmXzpg84PGedcy/dEtdz5nG05s9bU2js/w5Nxo8HJ+OnQ8+ExmbMMTqmnj1un+vjaE0jbs/r49aqKTa2YgJ+ODCRQK8iPK+NmSd3LV60Zmhu53bVFBp7c18K44e9BPLizK7aWM/dtIxF15o3xnYvWlP0ZO6t1BQa+/2eZMbN98eYGM24QcY6ukfH4TyzG63p7LZ2TbGx5SNwY/dICcPZ1ZwP56p69BqtyWOtWVNs7E5ShPDfXcM0TOOdQxnfkzGDunqOwd3vd3Ev5EZrCh7jNtYUGvufHUMILvx7pxUaM6COzq15kbiqXiSuqheJq+pF4qp6dldo7Lfbn5IwiPEduz6F7/6UyBA97lKP0YwXrXn7agqN9XsGocEz0BE/vb6XQBgszVvQvGhNSV7jdtUUGnt9WwL8255kfLuVo88p10OE9yi6F63p7N6umkJjr5b2w7UtnC9LHw+Nr5b2DXFtC4XGDE93aYw6V96krn5vtKbu6uPbXVNo7MW1vXDx9UcZdWt7Mz4jMcb6R3FhHclTR+LRse4xdE/iRmve3ppCY6O0LaKNbZOsxv8BTgNh0QmVab0AAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
-                        </scg:List>
-                      </uix:TargetAnchorable.Anchors>
-                    </uix:TargetAnchorable>
-                  </uix:NClick.Target>
-                </uix:NClick>
-                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Forex]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='日期' ReferenceIdx='0' Name='日期'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／新台幣' ReferenceIdx='1' Name='美元／新台幣'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='人民幣／新台幣' ReferenceIdx='2' Name='人民幣／新台幣'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='歐元／美元' ReferenceIdx='3' Name='歐元／美元'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／日幣' ReferenceIdx='4' Name='美元／日幣'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='英鎊／美元' ReferenceIdx='5' Name='英鎊／美元' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='澳幣／美元' ReferenceIdx='6' Name='澳幣／美元' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／港幣' ReferenceIdx='7' Name='美元／港幣' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／人民幣' ReferenceIdx='8' Name='美元／人民幣' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／南非幣' ReferenceIdx='9' Name='美元／南非幣' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='紐幣／美元' ReferenceIdx='10' Name='紐幣／美元' IsDeleted='true'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xD;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='日期' attr='fulltext' /&gt;&lt;column name='美元／新台幣' attr='fulltext' /&gt;&lt;column name='人民幣／新台幣' attr='fulltext' /&gt;&lt;column name='歐元／美元' attr='fulltext' /&gt;&lt;column name='美元／日幣' attr='fulltext' /&gt;&lt;column name='英鎊／美元' attr='fulltext' /&gt;&lt;column name='澳幣／美元' attr='fulltext' /&gt;&lt;column name='美元／港幣' attr='fulltext' /&gt;&lt;column name='美元／人民幣' attr='fulltext' /&gt;&lt;column name='美元／南非幣' attr='fulltext' /&gt;&lt;column name='紐幣／美元' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="388,158.66666666666666" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V3">
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Forex]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='日期' ReferenceIdx='0' Name='日期'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／新台幣' ReferenceIdx='1' Name='美元／新台幣'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='人民幣／新台幣' ReferenceIdx='2' Name='人民幣／新台幣'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='歐元／美元' ReferenceIdx='3' Name='歐元／美元'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／日幣' ReferenceIdx='4' Name='美元／日幣'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='英鎊／美元' ReferenceIdx='5' Name='英鎊／美元' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='澳幣／美元' ReferenceIdx='6' Name='澳幣／美元' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／港幣' ReferenceIdx='7' Name='美元／港幣' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／人民幣' ReferenceIdx='8' Name='美元／人民幣' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／南非幣' ReferenceIdx='9' Name='美元／南非幣' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='紐幣／美元' ReferenceIdx='10' Name='紐幣／美元' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='日期' attr='fulltext' /&gt;&lt;column name='美元／新台幣' attr='fulltext' /&gt;&lt;column name='人民幣／新台幣' attr='fulltext' /&gt;&lt;column name='歐元／美元' attr='fulltext' /&gt;&lt;column name='美元／日幣' attr='fulltext' /&gt;&lt;column name='英鎊／美元' attr='fulltext' /&gt;&lt;column name='澳幣／美元' attr='fulltext' /&gt;&lt;column name='美元／港幣' attr='fulltext' /&gt;&lt;column name='美元／人民幣' attr='fulltext' /&gt;&lt;column name='美元／南非幣' attr='fulltext' /&gt;&lt;column name='紐幣／美元' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,156.8" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V3">
                   <uix:NExtractData.Target>
                     <uix:TargetAnchorable DesignTimeRectangle="724, 953, 1140, 170" DesignTimeScaleFactor="1.5" FriendlyName="'日期 美元／新台幣'" FullSelectorArgument="&lt;webctrl parentid='printhere' tag='TABLE' /&gt;" Guid="b0d7e4d0-f394-4a78-b2da-f0de24b034b1" InformativeScreenshot="104db5e6b0cecae465085b00cf38b1a1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                   </uix:NExtractData.Target>
@@ -224,163 +186,183 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">150,23.66666666666667</av:Point>
-                <av:Size x:Key="ShapeSize">200,52.666666666666664</av:Size>
-                <av:PointCollection x:Key="ConnectorLocation">250,76.33333333333334 250,106.33333333333334 230,106.33333333333334 230,188</av:PointCollection>
+                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">150,49.66666666666667 120,49.66666666666667 120,85.2</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="新台幣／日幣" DataTable="[dt_Forex]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,52.666666666666664" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="新台幣／日幣" DataTable="[dt_Forex]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
             <FlowStep.Next>
-              <FlowStep x:Name="__ReferenceID2">
+              <FlowStep x:Name="__ReferenceID5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">13,188</av:Point>
-                    <av:Size x:Key="ShapeSize">434,114.66666666666667</av:Size>
-                    <av:PointCollection x:Key="ConnectorLocation">447,245.33333333333334 477,245.33333333333334 477,230 520,230</av:PointCollection>
+                    <av:Point x:Key="ShapeLocation">20,85.2</av:Point>
+                    <av:Size x:Key="ShapeSize">200,109.6</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">120,194.8 120,224.8 140,224.8 140,244.39999999999998</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Assign sap2010:Annotation.AnnotationText="Calculation of NTD/JPY currency pair." sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_7">
-                  <Assign.To>
-                    <OutArgument x:TypeArguments="x:Object">[dt_Forex.Rows(0).Item("新台幣／日幣")]</OutArgument>
-                  </Assign.To>
-                  <Assign.Value>
-                    <InArgument x:TypeArguments="x:Double">[(math.Round(Convert.ToDouble(dt_Forex.Rows(0).Item("美元／日幣"))/Convert.ToDouble(dt_Forex.Rows(0).Item("美元／新台幣")),4))]</InArgument>
-                  </Assign.Value>
+                <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sort the datatable by descending to get latest information." ColumnIndex="[0]" DataTable="[dt_Forex]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="200,109.6" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Decending" OutputDataTable="[dt_Forex]" SortOrder="Descending">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                </Assign>
+                </ui:SortDataTable>
                 <FlowStep.Next>
-                  <FlowStep x:Name="__ReferenceID3">
+                  <FlowStep x:Name="__ReferenceID1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">520,174.66666666666666</av:Point>
-                        <av:Size x:Key="ShapeSize">200,110.66666666666667</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">620,285.3333333333333 620,409 480,409</av:PointCollection>
+                        <av:Point x:Key="ShapeLocation">8.400000000000006,244.39999999999998</av:Point>
+                        <av:Size x:Key="ShapeSize">263.2,91.2</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">271.6,290 301.6,290 301.6,221.86666666666667 520,221.86666666666667</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out what currency pair should be sent by email" DataTable="[dt_Forex]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="200,110.66666666666667" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_Forex]" SelectColumnsMode="Remove">
-                      <ui:FilterDataTable.Filters>
-                        <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-                          <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
-                        </scg:List>
-                      </ui:FilterDataTable.Filters>
-                      <ui:FilterDataTable.SelectColumns>
-                        <scg:List x:TypeArguments="InArgument" Capacity="4">
-                          <InArgument x:TypeArguments="x:String">["美元／日幣"]</InArgument>
-                        </scg:List>
-                      </ui:FilterDataTable.SelectColumns>
+                    <Assign sap2010:Annotation.AnnotationText="Calculation of NTD/JPY currency pair." sap:VirtualizedContainerService.HintSize="263.2,91.2" sap2010:WorkflowViewState.IdRef="Assign_7">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Object">[dt_Forex.Rows(0).Item("新台幣／日幣")]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Double">[(math.Round(Convert.ToDouble(dt_Forex.Rows(0).Item("美元／日幣"))/Convert.ToDouble(dt_Forex.Rows(0).Item("美元／新台幣")),4))]</InArgument>
+                      </Assign.Value>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                    </ui:FilterDataTable>
+                    </Assign>
                     <FlowStep.Next>
-                      <FlowStep x:Name="__ReferenceID4">
+                      <FlowStep x:Name="__ReferenceID2">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">280,353.6666666666667</av:Point>
-                            <av:Size x:Key="ShapeSize">200,110.66666666666667</av:Size>
-                            <av:PointCollection x:Key="ConnectorLocation">280,409 140,409 140,489.66666666666663</av:PointCollection>
+                            <av:Point x:Key="ShapeLocation">520,174.66666666666666</av:Point>
+                            <av:Size x:Key="ShapeSize">200,94.4</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">620,269.06666666666666 620,420 520,420</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Use loop to form forex info to string&#xD;&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,110.66666666666667" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[dt_Forex.Columns]">
-                          <ui:ForEach.Body>
-                            <ActivityAction x:TypeArguments="sd:DataColumn">
-                              <ActivityAction.Argument>
-                                <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="currentItem" />
-                              </ActivityAction.Argument>
-                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,202" sap2010:WorkflowViewState.IdRef="Sequence_12">
-                                <sap:WorkflowViewStateService.ViewState>
-                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                  </scg:Dictionary>
-                                </sap:WorkflowViewStateService.ViewState>
-                                <Assign sap2010:Annotation.AnnotationText="Concate the string by plus sign" sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_10">
-                                  <Assign.To>
-                                    <OutArgument x:TypeArguments="x:String">[ForexInfo]</OutArgument>
-                                  </Assign.To>
-                                  <Assign.Value>
-                                    <InArgument x:TypeArguments="x:String">[ForexInfo+currentitem.ToString+": "+dt_Forex.rows(0).item(currentitem.ToString).ToString+vbCrLf]</InArgument>
-                                  </Assign.Value>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </Assign>
-                              </Sequence>
-                            </ActivityAction>
-                          </ui:ForEach.Body>
+                        <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out what currency pair should be sent by email" DataTable="[dt_Forex]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="200,94.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_Forex]" SelectColumnsMode="Remove">
+                          <ui:FilterDataTable.Filters>
+                            <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                              <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
+                            </scg:List>
+                          </ui:FilterDataTable.Filters>
+                          <ui:FilterDataTable.SelectColumns>
+                            <scg:List x:TypeArguments="InArgument" Capacity="4">
+                              <InArgument x:TypeArguments="x:String">["美元／日幣"]</InArgument>
+                            </scg:List>
+                          </ui:FilterDataTable.SelectColumns>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                        </ui:ForEach>
+                        </ui:FilterDataTable>
                         <FlowStep.Next>
-                          <FlowStep x:Name="__ReferenceID1">
+                          <FlowStep x:Name="__ReferenceID3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">3.333333333333343,489.66666666666663</av:Point>
-                                <av:Size x:Key="ShapeSize">273.3333333333333,80.66666666666667</av:Size>
+                                <av:Point x:Key="ShapeLocation">320,365.2</av:Point>
+                                <av:Size x:Key="ShapeSize">200,109.6</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">320,420 290,420 290,408.46666666666664 265.6,408.46666666666664</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="joseph.lai@goodfinance.com" DisplayName="Use Gmail" EmailAddress="joseph.lai@goodfinance.com" sap:VirtualizedContainerService.HintSize="273.3333333333333,80.66666666666667" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_1" Timeout="90" UseConnectionService="False">
-                              <umab:GmailApplicationCard.Body>
-                                <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                            <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Use loop to form forex info to string&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,109.6" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[dt_Forex.Columns]">
+                              <ui:ForEach.Body>
+                                <ActivityAction x:TypeArguments="sd:DataColumn">
                                   <ActivityAction.Argument>
-                                    <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                                    <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="currentItem" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,531.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,202" sap2010:WorkflowViewState.IdRef="Sequence_12">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" sap2010:Annotation.AnnotationText="Send email with forex info" Body="[&quot;Below is the daily forex information:  &quot;+vbCrLf+ForexInfo]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,420.6666666666667" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Daily Forex Information" To="jimmy.lee@goodfinance.com" UseDocumentAsBody="False">
-                                      <umab:SendMailX.Files>
-                                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-                                      </umab:SendMailX.Files>
-                                      <umab:SendMailX.HtmlBodyFromFile>
-                                        <umabh:HtmlContentArgument FilePath="{x:Null}">
-                                          <umabh:HtmlContentArgument.RuntimeImages>
-                                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
-                                          </umabh:HtmlContentArgument.RuntimeImages>
-                                          <umabh:HtmlContentArgument.ValueMappings>
-                                            <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
-                                          </umabh:HtmlContentArgument.ValueMappings>
-                                        </umabh:HtmlContentArgument>
-                                      </umab:SendMailX.HtmlBodyFromFile>
+                                    <Assign sap2010:Annotation.AnnotationText="Concate the string by plus sign" sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:String">[ForexInfo]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:String">[ForexInfo+currentitem.ToString+": "+dt_Forex.rows(0).item(currentitem.ToString).ToString+vbCrLf]</InArgument>
+                                      </Assign.Value>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                    </umab:SendMailX>
+                                    </Assign>
                                   </Sequence>
                                 </ActivityAction>
-                              </umab:GmailApplicationCard.Body>
-                              <umab:GmailApplicationCard.ClientId>
-                                <InArgument x:TypeArguments="x:String">
-                                  <Literal x:TypeArguments="x:String" Value="" />
-                                </InArgument>
-                              </umab:GmailApplicationCard.ClientId>
-                              <umab:GmailApplicationCard.ClientSecret>
-                                <InArgument x:TypeArguments="x:String">
-                                  <Literal x:TypeArguments="x:String" Value="" />
-                                </InArgument>
-                              </umab:GmailApplicationCard.ClientSecret>
+                              </ui:ForEach.Body>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                            </umab:GmailApplicationCard>
+                            </ui:ForEach>
+                            <FlowStep.Next>
+                              <FlowStep x:Name="__ReferenceID4">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <av:Point x:Key="ShapeLocation">0,369.26666666666665</av:Point>
+                                    <av:Size x:Key="ShapeSize">265.6,78.4</av:Size>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="r11722016@g.ntu.edu.tw" DisplayName="Use Gmail" EmailAddress="r11722016@g.ntu.edu.tw" sap:VirtualizedContainerService.HintSize="265.6,78.4" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="90" UseConnectionService="False">
+                                  <umab:GmailApplicationCard.Body>
+                                    <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                                      <ActivityAction.Argument>
+                                        <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                                      </ActivityAction.Argument>
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,490.4" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <umab:SendMailX Bcc="{x:Null}" Cc="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" sap2010:Annotation.AnnotationText="Send email with forex info" Body="[&quot;Below is the daily forex information:  &quot;+vbCrLf+ForexInfo]" BodyType="Text" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="433.6,397.6" sap2010:WorkflowViewState.IdRef="SendMailX_2" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Daily Forex Information" To="jimmy.lee@goodfinance.com" UseDocumentAsBody="False">
+                                          <umab:SendMailX.Files>
+                                            <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                                          </umab:SendMailX.Files>
+                                          <umab:SendMailX.HtmlBodyFromFile>
+                                            <umabh:HtmlContentArgument FilePath="{x:Null}">
+                                              <umabh:HtmlContentArgument.RuntimeImages>
+                                                <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                                              </umabh:HtmlContentArgument.RuntimeImages>
+                                              <umabh:HtmlContentArgument.ValueMappings>
+                                                <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                                              </umabh:HtmlContentArgument.ValueMappings>
+                                            </umabh:HtmlContentArgument>
+                                          </umab:SendMailX.HtmlBodyFromFile>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </umab:SendMailX>
+                                      </Sequence>
+                                    </ActivityAction>
+                                  </umab:GmailApplicationCard.Body>
+                                  <umab:GmailApplicationCard.ClientId>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </umab:GmailApplicationCard.ClientId>
+                                  <umab:GmailApplicationCard.ClientSecret>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </umab:GmailApplicationCard.ClientSecret>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </umab:GmailApplicationCard>
+                              </FlowStep>
+                            </FlowStep.Next>
                           </FlowStep>
                         </FlowStep.Next>
                       </FlowStep>
@@ -397,6 +379,7 @@
       <x:Reference>__ReferenceID2</x:Reference>
       <x:Reference>__ReferenceID3</x:Reference>
       <x:Reference>__ReferenceID4</x:Reference>
+      <x:Reference>__ReferenceID5</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>
