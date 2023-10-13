@@ -337,7 +337,7 @@
                         <av:Size x:Key="ShapeSize">265.6,120.8</av:Size>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="r11722016@g.ntu.edu.tw" sap2010:Annotation.AnnotationText="In the Use Google Drive container, the connection is needed to be set." DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="265.6,120.8" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_5" UseConnectionService="False" UserEmail="r11722016@g.ntu.edu.tw">
+                    <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="r11722016@g.ntu.edu.tw" sap2010:Annotation.AnnotationText="In the Use Google Drive container, the connection is needed to be set." DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="508.79999999999995,1933.6" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_5" UseConnectionService="False" UserEmail="r11722016@g.ntu.edu.tw">
                       <ugad:GoogleDriveApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                           <ActivityAction.Argument>
@@ -448,7 +448,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
-                            <uga:CreateFilePermission ContinueOnError="{x:Null}" Domain="{x:Null}" FileFriendlyName="{x:Null}" Result="{x:Null}" sap2010:Annotation.AnnotationText="Share the file folder location to the user. Role of permission is recommmened to be set as reader." AuthScopesInvalid="False" DisplayName="Share File" DriveTarget="[GoogleDrive]" EmailMessage="A new permission has been created, and you are the recipient!" FileId="[FolderID]" FileIdSelectionMode="EnterId" GranteeType="USER" sap:VirtualizedContainerService.HintSize="433.6,276.8" sap2010:WorkflowViewState.IdRef="CreateFilePermission_3" Role="READER" SendNotificationEmail="True" SupportsTeamDrives="False" UseDomainAdminAccess="False" UserEmail="philip.wu@goodfinance.com">
+                            <uga:CreateFilePermission ContinueOnError="{x:Null}" Domain="{x:Null}" FileFriendlyName="{x:Null}" Result="{x:Null}" sap2010:Annotation.AnnotationText="Share the file folder location to the user. Role of permission is recommmened to be set as reader." AuthScopesInvalid="False" DisplayName="Share File" DriveTarget="[GoogleDrive]" EmailMessage="A new permission has been created, and you are the recipient!" FileId="[FolderID]" FileIdSelectionMode="EnterId" GranteeType="USER" sap:VirtualizedContainerService.HintSize="433.6,276.8" sap2010:WorkflowViewState.IdRef="CreateFilePermission_3" Role="READER" SendNotificationEmail="True" SupportsTeamDrives="False" UseDomainAdminAccess="False" UserEmail="R11722015@ntu.edu.tw">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
