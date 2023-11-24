@@ -130,7 +130,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart sap:VirtualizedContainerService.HintSize="1035.2,636.8" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="1035.2,636.7999999999998" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <Flowchart.Variables>
         <Variable x:TypeArguments="x:String" Name="ForexInfo" />
       </Flowchart.Variables>
@@ -167,9 +167,9 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Forex]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='日期' ReferenceIdx='0' Name='日期'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／新台幣' ReferenceIdx='1' Name='美元／新台幣'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='人民幣／新台幣' ReferenceIdx='2' Name='人民幣／新台幣'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='歐元／美元' ReferenceIdx='3' Name='歐元／美元'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／日幣' ReferenceIdx='4' Name='美元／日幣'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='英鎊／美元' ReferenceIdx='5' Name='英鎊／美元' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='澳幣／美元' ReferenceIdx='6' Name='澳幣／美元' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／港幣' ReferenceIdx='7' Name='美元／港幣' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／人民幣' ReferenceIdx='8' Name='美元／人民幣' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='美元／南非幣' ReferenceIdx='9' Name='美元／南非幣' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='紐幣／美元' ReferenceIdx='10' Name='紐幣／美元' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='日期' attr='fulltext' /&gt;&lt;column name='美元／新台幣' attr='fulltext' /&gt;&lt;column name='人民幣／新台幣' attr='fulltext' /&gt;&lt;column name='歐元／美元' attr='fulltext' /&gt;&lt;column name='美元／日幣' attr='fulltext' /&gt;&lt;column name='英鎊／美元' attr='fulltext' /&gt;&lt;column name='澳幣／美元' attr='fulltext' /&gt;&lt;column name='美元／港幣' attr='fulltext' /&gt;&lt;column name='美元／人民幣' attr='fulltext' /&gt;&lt;column name='美元／南非幣' attr='fulltext' /&gt;&lt;column name='紐幣／美元' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,156.8" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V3">
+                <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[dt_Forex]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='false' IsScrollEnabled='false'&gt;&lt;Column xsi:type='DataColumn' ReferenceName='日期' ReferenceIdx='0' Name='Date'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='美元／新台幣' ReferenceIdx='1' Name='USD／NTD'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='人民幣／新台幣' ReferenceIdx='2' Name='RMB／NTD'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='歐元／美元' ReferenceIdx='3' Name='EUR／USD'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='美元／日幣' ReferenceIdx='4' Name='USD／JPY'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='英鎊／美元' ReferenceIdx='5' Name='英鎊／美元' IsDeleted='true'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='澳幣／美元' ReferenceIdx='6' Name='澳幣／美元' IsDeleted='true'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='美元／港幣' ReferenceIdx='7' Name='美元／港幣' IsDeleted='true'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='美元／人民幣' ReferenceIdx='8' Name='美元／人民幣' IsDeleted='true'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='美元／南非幣' ReferenceIdx='9' Name='美元／南非幣' IsDeleted='true'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;Column xsi:type='DataColumn' ReferenceName='紐幣／美元' ReferenceIdx='10' Name='紐幣／美元' IsDeleted='true'&gt;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&lt;ValidationErrorMessage /&gt;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&lt;Format xsi:type='TextColumnFormat' /&gt;&lt;/Column&gt;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='日期' attr='fulltext' /&gt;&lt;column name='美元／新台幣' attr='fulltext' /&gt;&lt;column name='人民幣／新台幣' attr='fulltext' /&gt;&lt;column name='歐元／美元' attr='fulltext' /&gt;&lt;column name='美元／日幣' attr='fulltext' /&gt;&lt;column name='英鎊／美元' attr='fulltext' /&gt;&lt;column name='澳幣／美元' attr='fulltext' /&gt;&lt;column name='美元／港幣' attr='fulltext' /&gt;&lt;column name='美元／人民幣' attr='fulltext' /&gt;&lt;column name='美元／南非幣' attr='fulltext' /&gt;&lt;column name='紐幣／美元' attr='fulltext' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="333.6,156.8" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="c4c88938-6545-427f-a6d3-7d3eebaf5124" Version="V3">
                   <uix:NExtractData.Target>
-                    <uix:TargetAnchorable DesignTimeRectangle="724, 953, 1140, 170" DesignTimeScaleFactor="1.5" FriendlyName="'日期 美元／新台幣'" FullSelectorArgument="&lt;webctrl parentid='printhere' tag='TABLE' /&gt;" Guid="b0d7e4d0-f394-4a78-b2da-f0de24b034b1" InformativeScreenshot="104db5e6b0cecae465085b00cf38b1a1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                    <uix:TargetAnchorable DesignTimeRectangle="657, 497, 997, 1665" DesignTimeScaleFactor="1.25" FriendlyName="'日期 美元／新台幣'" FullSelectorArgument="&lt;webctrl parentid='printhere' tag='TABLE' /&gt;" Guid="06a305ac-34a7-43d1-96ad-db7aa64c25fc" InformativeScreenshot="104db5e6b0cecae465085b00cf38b1a1.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='臺灣期貨交易所-交易資訊-每日外幣參考匯率查詢' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                   </uix:NExtractData.Target>
                 </uix:NExtractData>
               </Sequence>
@@ -195,9 +195,9 @@
                 <av:PointCollection x:Key="ConnectorLocation">320,60 240,60</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="新台幣／日幣" DataTable="[dt_Forex]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="NTD／JPY" DataTable="[dt_Forex]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_8" />
             <FlowStep.Next>
-              <FlowStep x:Name="__ReferenceID5">
+              <FlowStep x:Name="__ReferenceID4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">40,34</av:Point>
@@ -219,10 +219,10 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <Assign sap2010:Annotation.AnnotationText="Calculation of NTD/JPY currency pair." sap:VirtualizedContainerService.HintSize="263.2,91.2" sap2010:WorkflowViewState.IdRef="Assign_12">
                           <Assign.To>
-                            <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("新台幣／日幣")]</OutArgument>
+                            <OutArgument x:TypeArguments="x:Object">[CurrentRow.Item("NTD／JPY")]</OutArgument>
                           </Assign.To>
                           <Assign.Value>
-                            <InArgument x:TypeArguments="x:Double">[(math.Round(Convert.ToDouble(CurrentRow.Item("美元／日幣"))/Convert.ToDouble(CurrentRow.Item("美元／新台幣")),4))]</InArgument>
+                            <InArgument x:TypeArguments="x:Object">[(math.Round(Convert.ToDouble(CurrentRow.Item("USD／JPY"))/Convert.ToDouble(CurrentRow.Item("USD／NTD")),4))]</InArgument>
                           </Assign.Value>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -241,27 +241,23 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:ForEachRow>
                 <FlowStep.Next>
-                  <FlowStep x:Name="__ReferenceID6">
+                  <FlowStep x:Name="__ReferenceID5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <av:Point x:Key="ShapeLocation">40,112.80000000000001</av:Point>
                         <av:Size x:Key="ShapeSize">200,94.4</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">140,207.20000000000002 140,237.20000000000002 160,237.20000000000002 160,260.8</av:PointCollection>
+                        <av:PointCollection x:Key="ConnectorLocation">140,207.20000000000002 140,237.20000000000002 142,237.20000000000002 142,260.8</av:PointCollection>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out what currency pair should be sent by email" DataTable="[dt_Forex]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="200,94.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_Forex]" SelectColumnsMode="Keep">
+                    <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter out what currency pair should be sent by email" DataTable="[dt_Forex]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="200,94.4" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_Forex]" SelectColumnsMode="Remove">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument Column="{x:Null}" Operand="{x:Null}" BooleanOperator="And" Operator="LT" />
                         </scg:List>
                       </ui:FilterDataTable.Filters>
                       <ui:FilterDataTable.SelectColumns>
-                        <scg:List x:TypeArguments="InArgument" Capacity="8">
-                          <InArgument x:TypeArguments="x:String">["日期"]</InArgument>
-                          <InArgument x:TypeArguments="x:String">["美元／新台幣"]</InArgument>
-                          <InArgument x:TypeArguments="x:String">["人民幣／新台幣"]</InArgument>
-                          <InArgument x:TypeArguments="x:String">["新台幣／日幣"]</InArgument>
-                          <InArgument x:TypeArguments="x:String">["歐元／美元"]</InArgument>
+                        <scg:List x:TypeArguments="InArgument" Capacity="4">
+                          <InArgument x:TypeArguments="x:String">["USD／JPY"]</InArgument>
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
                       <sap:WorkflowViewStateService.ViewState>
@@ -272,26 +268,27 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:FilterDataTable>
                     <FlowStep.Next>
-                      <FlowStep x:Name="__ReferenceID4">
+                      <FlowStep x:Name="__ReferenceID3">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <av:Point x:Key="ShapeLocation">27.19999999999999,260.8</av:Point>
-                            <av:Size x:Key="ShapeSize">265.6,78.4</av:Size>
-                            <av:PointCollection x:Key="ConnectorLocation">292.8,300 322.8,300 322.8,320 590,320</av:PointCollection>
+                            <av:Point x:Key="ShapeLocation">7.199999999999989,260.8</av:Point>
+                            <av:Size x:Key="ShapeSize">269.6,78.4</av:Size>
+                            <av:PointCollection x:Key="ConnectorLocation">142,339.20000000000005 142,369.20000000000005 410,369.20000000000005 410,310 440,310</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" SpreadsheetId="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="r11722016@g.ntu.edu.tw" Action="CreateIfNotExists" DisplayName="Use Google Spreadsheet" Filename="Forex Info Updated" sap:VirtualizedContainerService.HintSize="265.6,78.4" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="Browse" ParentFolderId="root" ParentFolderPath="My Drive" UseConnectionService="False" UserEmail="r11722016@g.ntu.edu.tw">
+                        <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" SpreadsheetId="{x:Null}" SpreadsheetName="{x:Null}" Timeout="{x:Null}" Account="r11722016@g.ntu.edu.tw" Action="CreateIfNotExists" DisplayName="Use Google Spreadsheet" Filename="Forex Info Updated" sap:VirtualizedContainerService.HintSize="269.6,78.4" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_3" Mode="Browse" ParentFolderId="root" ParentFolderPath="My Drive" UseConnectionService="False" UserEmail="r11722016@g.ntu.edu.tw">
                           <ugas:GoogleSheetsApplicationScope.Body>
                             <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,304" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,476.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
+                                <uga:ClearRange ContinueOnError="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Clear Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="333.6,132.8" sap2010:WorkflowViewState.IdRef="ClearRange_1" Range="A:E" SheetName="工作表1" />
                                 <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[dt_Forex]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="333.6,211.2" sap2010:WorkflowViewState.IdRef="WriteRange_3" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="工作表1" StartingCell="A1" />
                               </Sequence>
                             </ActivityAction>
@@ -313,15 +310,15 @@
                           </sap:WorkflowViewStateService.ViewState>
                         </ugas:GoogleSheetsApplicationScope>
                         <FlowStep.Next>
-                          <FlowStep x:Name="__ReferenceID3">
+                          <FlowStep x:Name="__ReferenceID6">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">590,265.2</av:Point>
+                                <av:Point x:Key="ShapeLocation">440,255.2</av:Point>
                                 <av:Size x:Key="ShapeSize">200,109.6</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">690,374.79999999999995 690,470 580,470</av:PointCollection>
+                                <av:PointCollection x:Key="ConnectorLocation">540,364.79999999999995 540,394.79999999999995 480,394.79999999999995 480,415.2</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sort the datatable by descending to get latest information." ColumnIndex="[0]" DataTable="[dt_Forex]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="200,109.6" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Decending" OutputDataTable="[dt_Forex]" SortOrder="Descending">
+                            <ui:SortDataTable ColumnName="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sort the datatable by descending to get latest information." ColumnIndex="[0]" DataTable="[dt_Forex]" DisplayName="Sort Data Table" sap:VirtualizedContainerService.HintSize="200,109.6" sap2010:WorkflowViewState.IdRef="SortDataTable_3" Order="Decending" OutputDataTable="[dt_Forex]" SortOrder="Descending">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -335,7 +332,7 @@
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <av:Point x:Key="ShapeLocation">380,415.2</av:Point>
                                     <av:Size x:Key="ShapeSize">200,109.6</av:Size>
-                                    <av:PointCollection x:Key="ConnectorLocation">380,470 272.8,470</av:PointCollection>
+                                    <av:PointCollection x:Key="ConnectorLocation">380,470 276.8,470</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                                 <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Use loop to form forex info to string&#xA;" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="200,109.6" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[dt_Forex.Columns]">
@@ -377,10 +374,10 @@
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">7.199999999999989,430.8</av:Point>
-                                        <av:Size x:Key="ShapeSize">265.6,78.4</av:Size>
+                                        <av:Size x:Key="ShapeSize">269.6,78.4</av:Size>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="r11722016@g.ntu.edu.tw" DisplayName="Use Gmail" EmailAddress="r11722016@g.ntu.edu.tw" sap:VirtualizedContainerService.HintSize="265.6,78.4" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="90" UseConnectionService="False">
+                                    <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="r11722016@g.ntu.edu.tw" DisplayName="Use Gmail" EmailAddress="r11722016@g.ntu.edu.tw" sap:VirtualizedContainerService.HintSize="269.6,78.4" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="90" UseConnectionService="False">
                                       <umab:GmailApplicationCard.Body>
                                         <ActivityAction x:TypeArguments="um:IMailQuickHandle">
                                           <ActivityAction.Argument>

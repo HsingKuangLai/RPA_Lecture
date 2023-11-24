@@ -179,7 +179,7 @@
             <av:PointCollection x:Key="ConnectorLocation">130,158.46666666666667 130,202.33333333333334</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Obtain the list of companies whose reports are upload to the 公開資訊觀測站.&#xA;" AttachMode="ByInstance" DisplayName="Use Browser Edge: 公開資訊觀測站" sap:VirtualizedContainerService.HintSize="433.6,1021.5999999999999" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="64c4cede-e0bc-4afd-9e16-0f1e74b8ab06" Version="V2">
+        <uix:NApplicationCard sap2010:Annotation.AnnotationText="Obtain the list of companies whose reports are upload to the 公開資訊觀測站.&#xA;" AttachMode="ByInstance" DisplayName="Use Browser Edge: 公開資訊觀測站" sap:VirtualizedContainerService.HintSize="200,124.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="64c4cede-e0bc-4afd-9e16-0f1e74b8ab06" Version="V2">
           <uix:NApplicationCard.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
@@ -337,13 +337,13 @@
                         <av:Size x:Key="ShapeSize">265.6,120.8</av:Size>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="r11722016@g.ntu.edu.tw" sap2010:Annotation.AnnotationText="In the Use Google Drive container, the connection is needed to be set." DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="265.6,120.8" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_5" UseConnectionService="False" UserEmail="r11722016@g.ntu.edu.tw">
+                    <ugad:GoogleDriveApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" Timeout="{x:Null}" Account="r11722016@g.ntu.edu.tw" sap2010:Annotation.AnnotationText="In the Use Google Drive container, the connection is needed to be set." DisplayName="Use Google Drive" sap:VirtualizedContainerService.HintSize="508.79999999999995,1600" sap2010:WorkflowViewState.IdRef="GoogleDriveApplicationScope_5" UseConnectionService="False" UserEmail="r11722016@g.ntu.edu.tw">
                       <ugad:GoogleDriveApplicationScope.Body>
                         <ActivityAction x:TypeArguments="ugad:IGoogleDriveTarget">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ugad:IGoogleDriveTarget" Name="GoogleDrive" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1760.8" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="475.2,1427.2" sap2010:WorkflowViewState.IdRef="Sequence_35">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -358,13 +358,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uga:CreateFolder>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Download each ESG report  via http request. And upload these files to the folder created before." DataTable="[dt_ESGReport]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,1098.4" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Download each ESG report  via http request. And upload these files to the folder created before." DataTable="[dt_ESGReport]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,764.8" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,940.8" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="375.2,607.2" sap2010:WorkflowViewState.IdRef="Sequence_34">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Int32" Name="ResponseStatus" />
                                       <Variable x:TypeArguments="x:String" Name="FileName" />
@@ -388,7 +388,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Assign>
-                                    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This is worthy to note that report may end up 1KB files. Hence, loop for the download processs once the downloaded file is 1kb." Condition="[new System.io.FileInfo(FileName).Length&lt;1000]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,385.6" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
+                                    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="This is worthy to note that report may end up 1KB files. Hence, loop for the download processs once the downloaded file is 1kb." Condition="[new System.io.FileInfo(FileName).Length&lt;1000]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="333.6,52" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_5">
                                       <ui:InterruptibleDoWhile.Body>
                                         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="245.6,220" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -422,7 +422,7 @@
                                       </ui:InterruptibleDoWhile.Body>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                                         </scg:Dictionary>
