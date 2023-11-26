@@ -18791,9 +18791,9 @@
     "restore": {
       "projectUniqueName": "PCAOB",
       "projectName": "PCAOB",
-      "projectPath": "C:\\Users\\star8\\Desktop\\PCAOB\\.local",
+      "projectPath": "C:\\Users\\star8\\Desktop\\RPA_Lecture\\PCAOB\\.local",
       "packagesPath": "C:\\Users\\star8\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\star8\\Desktop\\PCAOB\\.local"
+      "outputPath": "C:\\Users\\star8\\Desktop\\RPA_Lecture\\PCAOB\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
