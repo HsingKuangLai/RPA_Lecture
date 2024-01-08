@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="812,1524" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasc="clr-namespace:UiPath.Activities.System.Collections;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="991.2,1468.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -77,25 +77,28 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
       <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="618.6666666666666,1459.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="618.4,1404" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="s:String[]" Name="CompanyArr" />
-      <Variable x:TypeArguments="scg:List(x:String)" Name="FinanceList">
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="FinanceList" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="FoodList" />
+      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="ChemicalList" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="OtherList">
         <Variable.Default>
           <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new List(Of String)" />
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="FoodList" />
-      <Variable x:TypeArguments="scg:List(x:String)" Default="[new List(Of String)]" Name="ChemicalList" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="576.6666666666666,84" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign sap:VirtualizedContainerService.HintSize="576.8,60" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[CompanyArr]</OutArgument>
       </Assign.To>
@@ -103,14 +106,13 @@
         <InArgument x:TypeArguments="s:String[]">[{"3711(日月光)","2881(富邦金)","1710(東聯)","2845(遠東商銀)","2855(統一證)","3443(創意)","1216(統一)","1727(中石化)","9908(大台北)","1229(聯華)"}]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[CompanyArr]" />
-    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="576.6666666666666,746.6666666666666" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CompanyArr]">
+    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="576.8,708.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[CompanyArr]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:String">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:String" Name="Company" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="542.6666666666666,559.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="541.6,584.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="MatchWord" />
             </Sequence.Variables>
@@ -119,42 +121,26 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Matches BuilderPattern="[\u4E00-\u9FFF]+" DisplayName="Find Matching Patterns" FirstMatch="[MatchWord]" sap:VirtualizedContainerService.HintSize="500.6666666666667,60" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[Company]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;[\\u4E00-\\u9FFF]&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[\u4E00-\u9FFF]+" RegexOption="IgnoreCase, Compiled" />
-            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Left(Company,2)]" sap:VirtualizedContainerService.HintSize="500.6666666666667,372" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+            <ui:Matches sap2010:Annotation.AnnotationText="extract the chinese characters" BuilderPattern="[\u4E00-\u9FFF]+" DisplayName="Find Matching Patterns" FirstMatch="[MatchWord]" sap:VirtualizedContainerService.HintSize="500,91.2" sap2010:WorkflowViewState.IdRef="Matches_1" Input="[Company]" IsBuilderTabModified="True" Model="[{&quot;Index&quot;:0,&quot;OperationID&quot;:&quot;ADV&quot;,&quot;OperationName&quot;:&quot;Advanced&quot;,&quot;OperationValue&quot;:&quot;[\\u4E00-\\u9FFF]&quot;,&quot;QuantifierFirstValue&quot;:&quot;+&quot;,&quot;QuantifierID&quot;:&quot;OOM&quot;,&quot;QuantifierName&quot;:&quot;At least one (1 or more)&quot;,&quot;QuantifierSecondValue&quot;:null}]" Pattern="[\u4E00-\u9FFF]+" RegexOption="IgnoreCase, Compiled">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Matches>
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[Left(Company,2)]" sap:VirtualizedContainerService.HintSize="500,360.8" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+              <Switch.Default>
+                <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_5" ItemToAppend="[MatchWord]" List="[OtherList]" />
+              </Switch.Default>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence x:Key="12" sap:VirtualizedContainerService.HintSize="376,230" sap2010:WorkflowViewState.IdRef="Sequence_3">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uasc:AppendItemToCollection x:TypeArguments="x:String" Collection="[FoodList]" DisplayName="AppendItemToCollection&lt;Object&gt;" sap:VirtualizedContainerService.HintSize="334,142.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_1">
-                  <uasc:AppendItemToCollection.Items>
-                    <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                      <InArgument x:TypeArguments="x:String">[MatchWord]</InArgument>
-                    </scg:List>
-                  </uasc:AppendItemToCollection.Items>
-                </uasc:AppendItemToCollection>
-              </Sequence>
-              <uasc:AppendItemToCollection x:TypeArguments="x:String" x:Key="17" Collection="[ChemicalList]" DisplayName="AppendItemToCollection&lt;Object&gt;" sap:VirtualizedContainerService.HintSize="334,142.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_2">
-                <uasc:AppendItemToCollection.Items>
-                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                    <InArgument x:TypeArguments="x:String">[MatchWord]</InArgument>
-                  </scg:List>
-                </uasc:AppendItemToCollection.Items>
-              </uasc:AppendItemToCollection>
-              <uasc:AppendItemToCollection x:TypeArguments="x:String" x:Key="28" Collection="[FinanceList]" DisplayName="AppendItemToCollection&lt;Object&gt;" sap:VirtualizedContainerService.HintSize="334,142.66666666666666" sap2010:WorkflowViewState.IdRef="AppendItemToCollection`1_3">
-                <uasc:AppendItemToCollection.Items>
-                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
-                    <InArgument x:TypeArguments="x:String">[MatchWord]</InArgument>
-                  </scg:List>
-                </uasc:AppendItemToCollection.Items>
-              </uasc:AppendItemToCollection>
+              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" x:Key="12" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_2" ItemToAppend="[MatchWord]" List="[FoodList]" />
+              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" x:Key="17" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_3" ItemToAppend="[MatchWord]" List="[ChemicalList]" />
+              <uasa:AppendItemToList x:TypeArguments="x:String" ItemIndex="{x:Null}" x:Key="28" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="333.6,133.6" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_4" ItemToAppend="[MatchWord]" List="[FinanceList]" />
             </Switch>
           </Sequence>
         </ActivityAction>
@@ -166,8 +152,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEach>
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Finance company: &quot;+string.Join(&quot;,&quot;,FinanceList)]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Food company: &quot;+string.Join(&quot;,&quot;,FoodList)]" />
-    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.6666666666666,85.33333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Chemical company: &quot;+string.Join(&quot;,&quot;,ChemicalList)]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Finance company: &quot;+string.Join(&quot;,&quot;,FinanceList)]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Food company: &quot;+string.Join(&quot;,&quot;,FoodList)]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Chemical company: &quot;+string.Join(&quot;,&quot;,ChemicalList)]" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="576.8,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Others: &quot;+string.Join(&quot;,&quot;,OtherList)]" />
   </Sequence>
 </Activity>
